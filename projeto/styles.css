@@ -1,0 +1,72 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo e centralização */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #d8bfd8, #9370db); /* Gradiente lilás ao roxo */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Contêiner do formulário */
+.login-container {
+    background-color: #4b0082; /* Fundo roxo escuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra mais evidente */
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Largura máxima */
+    text-align: center;
+}
+
+/* Título */
+.login-container h1 {
+    color: #dda0dd; /* Cor lilás suave */
+    margin-bottom: 20px;
+}
+
+/* Estilo dos labels */
+.login-container form label {
+    display: block;
+    color: #ffffff; /* Cor do texto branca */
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Estilo dos campos de entrada */
+.login-container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dda0dd; /* Borda lilás */
+    border-radius: 4px;
+    font-size: 14px;
+    color: #4b0082; /* Texto roxo escuro */
+    background-color: #ffffff; /* Fundo branco */
+}
+
+/* Estilo do botão */
+.login-container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #9370db; /* Roxo vibrante para o botão */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container form button:hover {
+    background-color: #6a5acd; /* Roxo mais escuro no hover */
+}

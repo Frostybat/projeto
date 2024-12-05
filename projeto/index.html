@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Biblioteca de Mangás</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validarLogin(event) {
+            event.preventDefault(); // Impede o envio do formulário
+
+            // Simula a validação de login
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "123") {
+                // Redireciona para a página da biblioteca
+                window.location.href = "biblioteca.html";  // Caminho relativo
+            } else {
+                alert("Usuário ou senha inválidos!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Bem-vindo à Biblioteca de Mangás</h1>
+        <form onsubmit="validarLogin(event)">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>
